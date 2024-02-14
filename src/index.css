@@ -20,3 +20,6 @@ radial-gradient(at 79% 50%, hsla(203,73%,56%,0.5) 0px, transparent 50%);
 .statbox{
   @apply relative w-[400px] h-[215px] bg-[#fff2fb4c] rounded-[15px] font-sans text-xl overflow-hidden p-10 border border-solid border-black mt-6;
 }
+.statboxmin{
+  @apply relative w-[300px] h-[155px] bg-[#fff2fb4c] rounded-[15px] font-sans text-xl overflow-hidden p-6 border border-solid border-black mt-6;
+}
