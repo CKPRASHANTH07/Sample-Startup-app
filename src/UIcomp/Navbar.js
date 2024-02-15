@@ -1,19 +1,40 @@
-import React from 'react'
-import logo from '../Pagecompos/pageimg/logo.png'
+import React from "react";
+import logo from "../Pagecompos/pageimg/logo.png";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    
-    <div className='flex fixed w-screen h-[68px] text-2xl bg-gray-100 rounded-2xl font-sans text-blue-800 items-center z-10 '>
-<img src={logo} alt='logo' className='text-4xl text-black font-bold pl-4 w-[200px]'/>
-<div className='ml-10 rounded-xl space-x-10 space-y-[6px] pl-10 h-[50px] w-[1000px] items-center justify-center border border-black'><button>Home</button>
-<button>Services</button>
-<button>Training</button>
-<button>Ipss Request</button>
-<button>Programs</button>
-<button>Contact us</button>
-<button>Aboutus</button>
-    </div></div>
-  )
-}
+    <div className="fixed z-10 flex items-center justify-around w-screen">
+      {/* logo */}
+      <div>
+        <img src={logo} alt="logo" className="h-24" />
+      </div>
+      {/* buttons */}
+      <div className="flex p-2 space-x-16 font-Poppins text-[#063848]">
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <Link to="/">
+          <button>Services</button>
+        </Link>
+        <Link to="/">
+          <button>Training</button>
+        </Link>
+        <Link to="/">
+          <button>Ipss Request</button>
+        </Link>
+        <Link to="/">
+          <button>Programs</button>
+        </Link>
+        <Link to="/">
+          <button>Contact us</button>
+        </Link>
+        <Link>
+          <button>Aboutus</button>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

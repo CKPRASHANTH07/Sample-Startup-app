@@ -2,22 +2,26 @@ import React from "react";
 import mmImage from "./pageimg/mm.png";
 export default function Home() {
   return (
-    <div className="flex justify-center h-screen bgcolor">
-      <div className="flex space-x-44">
-        <div className="pt-40 w-fit">
-          <h1 className="pb-3 text-4xl font-bold font-Poppins">
+    <div className="flex justify-around h-screen bgcolor">
+      {/*  content */}
+      <div className="flex items-center w-fit">
+        <div>
+          <h1 className="text-4xl font-bold text-[#063848] font-Poppins">
             GET YOUR IDEAS STAGED!
           </h1>
-          <h2 className="mt-4 pb-10 w-[450px]">
+          <h2 className="my-5 font-semibold text-[#49706B] w-96 font-Inter">
             Transforming Ideas Into Impact and Supercharge Your Startup Journey
             With Our Accelerator Program. Join Us and Propel Your Vision To New
             Heights !
           </h2>
-          <button className="bg-blue-950 w-[170px] h-[35px] mt-4 rounded-xl text-white font-bold font-Poppins">
+          <button className="h-10 px-5 my-4 text-white w-fit bg-blue-950 rounded-xl font-Poppins">
             Launch Test!
           </button>
         </div>
-        <img src={mmImage} className="h-[420px] w-[450px] pt-10 " alt="img" />
+      </div>
+      {/* Hero image */}
+      <div className="flex items-center">
+        <img src={mmImage} className="w-auto h-auto" alt="img" />
       </div>
     </div>
   );
