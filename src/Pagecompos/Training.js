@@ -10,7 +10,7 @@ export default function Training() {
   <img src={dogo} alt='dogo' className='h-4 w-4'/>
       <h1 className='statboxmin ml-6'>
           This part suggests that truth exists and is attainable. It implies that there are objective facts.
-          </h1 >
+          </h1>
 </div>
 
   <div> 
