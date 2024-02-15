@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+
+
+
+
+
+
+
 .bgcolor{
   background-color:hsla(268,0%,100%,1);
 background-image:
@@ -23,3 +38,5 @@ radial-gradient(at 79% 50%, hsla(203,73%,56%,0.5) 0px, transparent 50%);
 .statboxmin{
   @apply relative w-[300px] h-[155px] bg-[#fff2fb4c] rounded-[15px] font-sans text-xl overflow-hidden p-6 border border-solid border-black mt-6;
 }
+
+
