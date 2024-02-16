@@ -1,26 +1,27 @@
-import React from 'react'
-import { Route, Router, Routes } from 'react-router-dom'
-import Home from './Pagecompos/Home'
-import Services from './Pagecompos/Services'
-import Ipss from './Pagecompos/Ipss'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../src/Pagecompos/Home";
+import Training from "../src/Pagecompos/Training";
+import Navbar from "./UIcomp/Navbar";
+import Ipss from "./Pagecompos/Ipss";
+import Services from "./Pagecompos/Services";
+import Contactus from "./Pagecompos/Contactus";
+import Aboutus from "./Pagecompos/Aboutus";
 
-export default function App() {
+function App() {
   return (
-    <div>
     <Router>
+     <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Services' element={<Services/>}/>
-        <Route path='/Ipss' element={<Ipss/>}/>
-        <Route path='/Training' element={<Home/>}/>  
-        <Route path='/Aboutus' element={<Home/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/Training" element={<Training />} />
+        <Route path="/Ipss" element={<Ipss/>} />
+        <Route path="/Services" element={<Services/>}/>
+        <Route path="/Contactus" element={<Contactus/>}/>
+        <Route path="/Aboutus" element={<Aboutus/>}/>
       </Routes>
     </Router>
-
-    
-
-    
-      
-    </div>
-  )
+  );
 }
+
+export default App;

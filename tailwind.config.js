@@ -8,6 +8,10 @@ module.exports = {
       fontFamily:{
         "Poppins":['Poppins','sans-serif'],
         "Inter":['Inter','sans-serif'],
+      },
+      textColor:{
+        "subheading": "#49706B",
+        "heading": "#063848"
       }
     },
   },
