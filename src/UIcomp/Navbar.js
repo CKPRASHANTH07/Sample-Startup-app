@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Pagecompos/pageimg/logo.png";
+import logo from "../pageimg/logo.png";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
