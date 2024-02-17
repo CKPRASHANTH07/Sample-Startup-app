@@ -3,7 +3,7 @@ import mmImage from "../pageimg/mm.png";
 
 export default function Landingpage() {
   return (
-    <div className="flex justify-around h-screen bgcolor">
+    <div className="flex justify-around h-screen ">
       {/*  content */}
       <div className="flex items-center w-fit">
         <div>

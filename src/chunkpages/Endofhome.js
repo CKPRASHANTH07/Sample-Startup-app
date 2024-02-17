@@ -38,7 +38,7 @@ export default function Endofhome() {
   
   return (
 
-    <div className="h-dvh bgcolor">
+    <div className="h-dvh ">
       <div className='flex flex-col gap-y-7'>
         {/* row sliding */}
         <div className='flex flex-row justify-center'>

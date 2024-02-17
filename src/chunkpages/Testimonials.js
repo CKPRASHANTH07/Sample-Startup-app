@@ -4,12 +4,12 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 export default function Testimonials() {
   return (
-    <div className="h-dvh bgcolor">
+    <div className="h-dvh ">
 
 
         <div>
            
-            <div className="relative z-40 px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container">
+            <div className="relative  px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container">
                 <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={2}>
                     <h1 className="hidden font-bold leading-tight text-gray-800 font-Poppins xl:block">
                         What our customers are saying
