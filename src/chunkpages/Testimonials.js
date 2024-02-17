@@ -20,7 +20,9 @@ export default function Testimonials() {
                             <div className="flex">
                                 <div className="mt-14 md:flex">
                                     <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
-                                        <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="" className="flex-shrink-0 object-cover w-full h-full shadow-lg rounded-2xl object-fit" />
+                                        <div className="">
+                                        <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="" className="flex-shrink-0 object-cover w-full h-full shadow-lg rounded-3xl object-fit" />
+                                        </div>
                                         <div className="absolute top-0 right-0 items-center justify-center hidden w-32 h-32 -mr-16 bg-indigo-100 rounded-full md:flex -mt-14">
                                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                                         </div>
@@ -42,7 +44,9 @@ export default function Testimonials() {
                             <div className="relative flex" style={{ transform: 'translateX(0%)' }}>
                                 <div className="mt-14 md:flex">
                                     <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
-                                        <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="" className="flex-shrink-0 object-cover w-full h-full rounded shadow-lg object-fit" />
+                                        <div className="">
+                                        <img src="https://i.ibb.co/4g1D9cv/imgslider1.png" alt="" className="flex-shrink-0 object-cover w-full h-full shadow-lg rounded-3xl object-fit" />
+                                        </div>
                                         <div className="absolute top-0 right-0 items-center justify-center hidden w-32 h-32 -mr-16 bg-indigo-100 rounded-full md:flex -mt-14">
                                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                                         </div>
