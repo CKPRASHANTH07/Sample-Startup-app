@@ -17,11 +17,17 @@ export default function Navbar() {
         <Link to="/Services">
           <button>Services</button>
         </Link>
-        <Link to="/Training">
-          <button>Training</button>
-        </Link>
         <Link to="/Ipss">
           <button>Ipss Request</button>
+        </Link>
+        <Link to='/AILaunchPad'>
+          <button>Al Launchpad </button>
+        </Link>
+        <Link to='/StartupLaunchPad'>
+          <button>Start Up Launchpad </button>
+        </Link> 
+        <Link to='/Eventsprogram'>
+          <button>Events program </button>
         </Link>
         <Link to="/Contactus">
           <button>Contact us</button>
