@@ -23,8 +23,10 @@ import Hosteventprogram from "./SubPagesCompos/Hosteventprogram";
 
 function App() {
   return (
+    
+  
     <Router>
-     <Navbar/>
+    <Navbar/>
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<Home />} />
@@ -47,6 +49,7 @@ function App() {
         <Route path="/hosteventprogram" element={<Hosteventprogram/>}/>
       </Routes>
     </Router>
+  
   );
 }
 
