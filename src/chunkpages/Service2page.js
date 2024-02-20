@@ -3,7 +3,7 @@ export default function Service2()
 {
     return(
 
-<section  className="grid gap-4  my-32 bgcolor place-items-center">
+<section  className="grid gap-4  -my-40  lg:my-40  bgcolor place-items-center">
 
     <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-6">
