@@ -5,9 +5,7 @@ export default function Stats() {
   return (
     <main className="p-10 overflow-hidden h-dvh ">
             {/* Title */}
-      <div className="px-10 py-10">
-        <h1 className="font-Poppins">What we done ?</h1>
-      </div>
+        <h1 className="py-4 text-2xl text-center font-Poppins">What we done ?</h1>
       <div className="flex px-10 space-x-24">
         {/* Hero image */}
         <div className="flex items-start py-10">

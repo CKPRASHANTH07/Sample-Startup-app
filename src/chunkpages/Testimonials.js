@@ -9,9 +9,9 @@ export default function Testimonials() {
 
         <div>
            
-            <div className="relative  px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container">
+            <div className="relative px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container">
                 <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={2}>
-                    <h1 className="hidden font-bold leading-tight text-gray-800 font-Poppins xl:block">
+                    <h1 className="hidden pb-10 text-2xl text-center text-gray-800 font-Poppins xl:block">
                         What our customers are saying
                     </h1>
                     <h1 className="block text-5xl font-bold leading-tight text-gray-800 xl:hidden lg:leading-10">What our customers are saying</h1>

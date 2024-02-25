@@ -1,43 +1,18 @@
-import React, { useState,useEffect} from "react";
+import React, { useState } from "react";
 import logo from "../pageimg/logo.png";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-
-  const [ServiceDropdown, setServiceDropdown] = useState(false);
-  const [EventDropdown, setEventDropdown] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleMobileMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 200) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  const [ServiceDropdown, setServiceDropdown] = useState(false)
+  const [EventDropdown, setEventDropdown] = useState(false)
   return (
-    <div className={`fixed z-10 flex items-center justify-around w-screen ${isScrolled ? "backdrop-blur-md bg-white/30" : ""}`}>
+    <div className="fixed flex items-center justify-around w-screen z-100">
       {/* logo */}
       <div>
         <img src={logo} alt="logo" className="h-24" />
       </div>
       {/* buttons */}
-      <div className="hidden md:flex p-2 space-x-16 font-Inter font-semibold text-[#063848]">
+      <div className="flex p-2 space-x-16 font-Inter font-semibold  text-[#063848]">
         <Link to="/">
           <button>Home</button>
         </Link>
@@ -56,6 +31,12 @@ export default function Navbar() {
         <Link to="/Ipss">
           <button>Ipss Request</button>
         </Link>
+        <Link to='/AILaunchPad'>
+          <button>Al Launchpad </button>
+        </Link>
+        <Link to='/StartupLaunchPad'>
+          <button>Start Up Launchpad </button>
+        </Link> 
         <Link to='/Eventsprogram' className="relative" onClick={()=>setEventDropdown(false)} onMouseEnter={()=>setEventDropdown(true)} onMouseLeave={()=>setEventDropdown(false)}>
           <button>Events program </button>
           {EventDropdown &&
@@ -66,31 +47,12 @@ export default function Navbar() {
         </div>
           }
         </Link>
-        <Link to="/Aboutus">
-          <button>Aboutus</button>
-        </Link>
         <Link to="/Contactus">
           <button>Contact us</button>
         </Link>
-      </div>
-
-      {/* Mobile menu */}
-      <div className="md:hidden">
-        <button onClick={handleMobileMenuToggle}>Menu</button>
-        {isMobileMenuOpen && (
-          <div className="absolute right-0 w-full bg-white shadow-md top-16">
-            <nav className="flex flex-col p-4 space-y-2">
-              <Link to="/">Home</Link>
-              <Link to="/Services">Services</Link>
-              <Link to="/Ipss">Ipss Request</Link>
-              <Link to="/AILaunchPad">Al Launchpad</Link>
-              <Link to="/StartupLaunchPad">Start Up Launchpad</Link>
-              <Link to="/Eventsprogram">Events program</Link>
-              <Link to="/Contactus">Contact us</Link>
-              <Link to="/Aboutus">Aboutus</Link>
-            </nav>
-          </div>
-        )}
+        <Link to="/Aboutus">
+          <button>Aboutus</button>
+        </Link>
       </div>
     </div>
   );
