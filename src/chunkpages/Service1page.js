@@ -6,7 +6,7 @@ export default function Service1()
 
 <section  className="grid gap-4    py-32 bgcolor place-items-center">
 <h1 className="grid my-4 text-6xl font-bold text-blue-900 place-items-center ">Our Services</h1>
-    <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+    <div className="relative items-center  px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-6">
             <div className="p-6 w-90 col-span-2 transition-all duration-300 border-2 border-solid  border-gray-500 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl">
                 <h1 className="mx-auto mb-8 text-2xl  text-blue-900  text-center font-semibold leading-none tracking-tighter lg:text-3xl">App Development</h1>
