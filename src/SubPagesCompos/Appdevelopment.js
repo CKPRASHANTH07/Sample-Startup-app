@@ -5,15 +5,15 @@ function Appdevelopment() {
     <section className="bgcolor grid gap-4    py-32 bgcolor place-items-center">
     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-900">Designed for business teams like yours</h2>
-            <p className="text-black-500 sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <h2 className="mb-4 text-6xl p-2 tracking-tight font-extrabold text-blue-900">App Development..!</h2>
+            <p className="text-black-500 sm:text-xl "> At Altruisty, we specialize in turning your app ideas into reality. Our team of experienced developers and designers is dedicated to creating innovative and user-friendly mobile applications </p>
         </div>
-        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div className="space-y-8 md:grid sm:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div className='border-2  border-gray-500 items-center p-4 transition-all duration-300 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl'>
                 <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                     <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                 </div>
-                <h3 className="mb-2 text-blue-900 text-xl font-bold">Marketing</h3>
+                <h3 className="mb-2 text-blue-900 text-xl font-bold">Custom App Development</h3>
                 <p className="text-black-500">Plan it, create it, launch it. Collaborate seamlessly with all  the organization and hit your marketing goals every month with our marketing plan.</p>
             </div>
             <div className='border-2  border-gray-500 items-center p-4 transition-all duration-300 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl'>

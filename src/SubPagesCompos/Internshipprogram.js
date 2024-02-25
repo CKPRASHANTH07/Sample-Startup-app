@@ -34,8 +34,8 @@ function Internshipprogram() {
             </div>
            
             <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-                <img className="w-full mb-4 rounded-lg  lg:mb-0 lg:flex" src="images/feature-2.png" alt="feature image 2"/>
-                <div className="text-gray-500 sm:text-lg :text-gray-400">
+                
+                <div className="text-gray-500 order-last sm:text-lg :text-gray-400">
                     <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-blue-900 :text-white">Project Internship</h2>
                     <p className="mb-8 font-semibold lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
                     
@@ -68,6 +68,7 @@ function Internshipprogram() {
                     </ul>
                     <p className="font-light lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
                 </div>
+                <img className="w-full mb-4 rounded-lg   lg:mb-0 lg:flex" src="images/feature-2.png" alt="feature 2"/>
             </div>
         </div>
       </section>

@@ -5,8 +5,8 @@ function Webdevelopment() {
     <section className="bgcolor grid gap-4    py-32 bgcolor place-items-center">
     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-900">Designed for business teams like yours</h2>
-            <p className="text-black-500 sm:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-blue-900">Web Development For Your Need..!</h2>
+            <p className="text-black-500 sm:text-xl">Here at Altruisty we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div className='border-2  border-gray-500 items-center p-4 transition-all duration-300 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl'>
