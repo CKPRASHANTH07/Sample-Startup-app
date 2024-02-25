@@ -66,6 +66,12 @@ export default function Navbar() {
         </div>
           }
         </Link>
+        <Link to="/">
+          <button>Musical hub</button>
+        </Link>
+        <Link to="/">
+          <button>Altruisty launchpad</button>
+        </Link>
         <Link to="/Aboutus">
           <button>Aboutus</button>
         </Link>

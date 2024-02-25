@@ -1,9 +1,9 @@
-import Footer from "../UIcomp/Footer";
 import React, { useState, useEffect } from "react";
 import img1 from "../pageimg/re.png";
 import img2 from "../pageimg/image (24).png";
 import img3 from "../pageimg/image (25).png";
 import img4 from "../pageimg/image (26).png";
+import Whatsapp from "./Whatsapp";
 
 export default function Endofhome() {
   const [activeCard, setActiveCard] = useState(0);
@@ -41,7 +41,7 @@ export default function Endofhome() {
   const visibleCards = getVisibleCards();
 
   return (
-    <div className="mt-24 h-dvh">
+    <div className="my-24 h-dvh">
       <h1 className="text-2xl text-center font-Poppins">
         Companies that trust us !
       </h1>
@@ -65,7 +65,7 @@ export default function Endofhome() {
           })}
         </div>
       </div>
-      <Footer />
+      <Whatsapp/>
     </div>
   );
 }
