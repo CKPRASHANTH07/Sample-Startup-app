@@ -20,7 +20,7 @@ import Internshipprogram from "./SubPagesCompos/Internshipprogram";
 import Eventsandcompetition from "./SubPagesCompos/Eventsandcompetition";
 import Pastprogramlog from "./SubPagesCompos/Pastprogramlog";
 import Hosteventprogram from "./SubPagesCompos/Hosteventprogram";
-
+import Form from "./chunkpages/form"
 
 function App() {
   return (
@@ -48,7 +48,7 @@ function App() {
         <Route path="/eventsandcompetition" element={<Eventsandcompetition/>}/>
         <Route path="/pastprogramlog" element={<Pastprogramlog/>}/>
         <Route path="/hosteventprogram" element={<Hosteventprogram/>}/>
-
+        <Route path="/form" element={<Form/>}/>
       </Routes>
     </Router>
   
