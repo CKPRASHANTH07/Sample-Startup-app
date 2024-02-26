@@ -21,6 +21,7 @@ import Eventsandcompetition from "./SubPagesCompos/Eventsandcompetition";
 import Pastprogramlog from "./SubPagesCompos/Pastprogramlog";
 import Hosteventprogram from "./SubPagesCompos/Hosteventprogram";
 
+
 function App() {
   return (
     
@@ -47,6 +48,7 @@ function App() {
         <Route path="/eventsandcompetition" element={<Eventsandcompetition/>}/>
         <Route path="/pastprogramlog" element={<Pastprogramlog/>}/>
         <Route path="/hosteventprogram" element={<Hosteventprogram/>}/>
+
       </Routes>
     </Router>
   
