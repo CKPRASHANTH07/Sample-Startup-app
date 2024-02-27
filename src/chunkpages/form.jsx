@@ -1,7 +1,72 @@
-import React from 'react'
+import React, { useState } from "react";
 
 
 function Form(){
+   const [formData, setFormData] = useState({
+      name:"",
+      phone:"",
+      email: "",
+      college: "",
+      course:"",
+      year:"",
+      
+    });
+  
+    const [errors, setErrors] = useState({});
+    const [submitted, setSubmitted] = useState(false);
+  
+    const handleInputChange = (e) => {
+      const { name, value } = e.target;
+  
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    };
+
+    const validateForm = () => {
+      let isValid = true;
+      const newErrors = {};
+  
+      // Validate email
+      if (!formData.name) {
+        newErrors.name = "Name is required";
+        isValid = false;
+      }if (!formData.phone) {
+         newErrors.phone = "Phone is required";
+         isValid = false;}
+         if (!formData.email) {
+            newErrors.email = "Email is required";
+            isValid = false;}
+            if (!formData.college) {
+               newErrors.college = "College is required";
+               isValid = false;}
+               if (!formData.course) {
+                  newErrors.course = "Courseis required";
+                  isValid = false;}
+
+      // Validate year
+      if (!formData.year) {
+        newErrors.year = "year is required";
+        isValid = false;
+      }
+  
+      setErrors(newErrors);
+      return isValid;
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      if (validateForm()) {
+        // Form is valid, you can submit or process the data here
+        console.log("Form data:", formData);
+        setSubmitted(true); // Set a submitted flag
+      } 
+    };
+  
+    const isFormValid = Object.keys(errors).length === 0;
+
 
   return (
  
@@ -18,48 +83,74 @@ function Form(){
                className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12"
                >
                <h2 className='my-4 text-4xl font-bold text-blue-900 place-items-center'>Fill The Form</h2>
-               <form>
+               {submitted ? (
+        <div className="success-message">Login successful!</div>
+      ) : (
+               <form onSubmit={handleSubmit}>
                   <div className="mb-6">
                      <input
                         type="text"
                         placeholder="Your Name"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                       
+                        onChange={handleInputChange}
+                       
                         />
+                         {errors.name && <div className="error">{errors.name}</div>}
                   </div>
                   <div className="mb-6">
                      <input
                         type="email"
                         placeholder="Your Email"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                   
+                       
                         />
+                        
                   </div>
                   <div className="mb-6">
                      <input
                         type="text"
                         placeholder="Your Phone"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                       
                         />
+                         {errors.phone && <div className="error">{errors.phone}</div>}
                   </div>
                   <div className="mb-6">
                      <input
                         type="text"
                         placeholder="Your College"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                        value={formData.college}
+                        onChange={handleInputChange}
+                       
                         />
+                         {errors.college && <div className="error">{errors.college}</div>}
                   </div>
                   <div className="mb-6">
                      <input
                         type="text"
                         placeholder="Course"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                        value={formData.course}
+                        onChange={handleInputChange}
+                       
                         />
+                         {errors.course && <div className="error">{errors.course}</div>}
                   </div>
                   <div className="mb-6">
                      <input
-                        type="date"
+                        type="month"
                         placeholder="Your Phone"
                         className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                       
                         />
+                         {errors.phone && <div className="error">{errors.phone}</div>}
                   </div>
                   <div className="mb-6">
                      <textarea
@@ -70,13 +161,14 @@ function Form(){
                   </div>
                   <div>
                      <button
-                        type="submit"
+                       type="submit" disabled={!isFormValid}
                         className="w-full p-3 bg-blue-900 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
                         >
                      Send Message
                      </button>
                   </div>
                </form>
+               )}
                <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
                      <svg
@@ -87,8 +179,7 @@ function Form(){
                         xmlns="http://www.w3.org/2000/svg"
                         >
                         <path
-                           fill-rule="evenodd"
-                           clip-rule="evenodd"
+                           
                            d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                            fill="#3056D3"
                            />
