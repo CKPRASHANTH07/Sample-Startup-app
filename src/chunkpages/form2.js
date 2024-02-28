@@ -1,5 +1,6 @@
-import React from "react";
+import React  from "react";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
 
 const fields = [
@@ -54,6 +55,7 @@ const fields = [
   },
 ];
 
+  
 export default function RegisterForm() {
   const {
     register,
@@ -61,19 +63,25 @@ export default function RegisterForm() {
     formState: { errors },
     
   } = useForm();
-
+  const [submitted, setSubmitted] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
     // You can perform further actions with the form data here
+  console.log("successfully submitted") 
+  setSubmitted(true);
   };
+
+
   return (
 <section
-   className="relative overflow-hidden py-20 lg:py-[20px]"
+   className="relative overflow-hidden flex  justify-center py-20 lg:py-[20px]"
    >
-        <div className=" lg:w-1/2 pb-10 pt-5 w-full p-4 flex flex-wrap justify-center bg-white shadow-2xl my-20 rounded-md mx-auto">
-          <div className="pb-5">
-            <h1 className="text-3xl font-bold">Register Form</h1>
-          </div>
+        <div className=" lg:w-1/2 w-3/4 pb-10 pt-5  p-4 flex flex-wrap justify-center items-center bg-white shadow-2xl my-20 rounded-md mx-auto">
+    
+          {submitted ? (
+        <div className="flex  justify-center items-center text-3xl font-bold">Login successful!</div>
+        
+      ) : (<> <h1 className="text-3xl font-bold">Register Form</h1>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col justify-start items-center w-full m-auto"
@@ -96,6 +104,7 @@ export default function RegisterForm() {
                     }`}
                     type={field.type}
                     placeholder={field.placeholder}
+                 
                   />
                   {errors[field.label.toLowerCase()] && (
                     <span>This field is required</span>
@@ -114,8 +123,11 @@ export default function RegisterForm() {
                 <HiOutlineArrowCircleRight size={20} />
               </button>
             </div>
-          </form>
+           
+          </form>  </>)}
+          
         </div>
+      
       </section>
   );
 }
