@@ -6,14 +6,14 @@ export default function Service2()
 
 <section  className="grid gap-4  -my-40  lg:my-40  bgcolor place-items-center">
     <div className="relative items-center  px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-6">
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto lg:grid-cols-6 items-start">
             <div className="p-6 w-90 col-span-2 transition-all duration-300 border-2 border-solid  border-gray-500 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl">
                 <h1 className="mx-auto mb-8 text-2xl  text-blue-900  text-center font-semibold leading-none tracking-tighter lg:text-3xl">Graphic Designing</h1>
                 <img className="object-contain object-center w-56 m-auto lg:h-48 md:h-36 rounded-xl" src= "images\graphic_design.png" alt="blog"/>
 
                 
-                    <p className="mx-auto text-base leading-relaxed  font-semibold text-gray-800">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing quis laboris nisi   </p>    
+                    <p className="mx-auto text-base leading-relaxed line-clamp-2 hover:line-clamp-4 transition-all duration-200 ease-linear font-semibold text-gray-800">
+                    Creating visually stunning graphics and illustrations that convey your brand's message effectively and leave a lasting impression.  </p>    
                     <Link  to='/graphicdesigning'>             
                   <div className="mt-16">
       <a href="/" className="relative inline-block text-sm group">
@@ -35,8 +35,8 @@ export default function Service2()
 
 
                
-                <p className="mx-auto text-base leading-relaxed font-semibold text-gray-800">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing quis laboris nisi  </p>      
+                <p className="mx-auto text-base leading-relaxed line-clamp-2 hover:line-clamp-4 transition-all duration-200 ease-linear font-semibold text-gray-800">
+                Offering comprehensive training programs in IT and IT related servies, equipping participants with practical skills and industry insights.  </p>      
                   <Link  to='/training'>  
                   <div className="mt-16">
       <a href="/" className="relative inline-block text-sm group">
@@ -53,11 +53,11 @@ export default function Service2()
             </div>
             <div className="p-6   col-span-2 transition-all duration-300 transform border-2 border-solid border-gray-500 shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl">
             <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none text-center tracking-tighter text-blue-900 lg:text-3xl">Internship Program</h1>
-            <img className="object-contain object-center w-44 m-auto lg:h-48 md:h-36 rounded-xl" src= "images\Intern.png" alt="blog"/>
+            <img className="object-contain object-center w-40 m-auto lg:h-44 md:h-36 rounded-xl" src= "images\Intern.png" alt="blog"/>
 
               
-                <p className="mx-auto my-4 text-base leading-relaxed font-semibold text-gray-800">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing quis nostrud nisi  </p> 
+                <p className="mx-auto my-4 text-base leading-relaxed line-clamp-2 hover:line-clamp-4 transition-all duration-200 ease-linear font-semibold text-gray-800">
+                Providing hands-on experience and mentorship to aspiring professionals, helping them kickstart their careers in IT related industries.  </p> 
                   <Link  to='/internshipprogram'>          
                   <div className="mt-16">    
       <a href="/" className="relative inline-block text-sm group">
