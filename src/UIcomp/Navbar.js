@@ -28,9 +28,9 @@ export default function Navbar() {
   return (
     <div className={`fixed z-10 flex items-center justify-around  ${isScrolled ? "backdrop-blur-md bg-white/30" : ""}`}>
       {/* logo */}
-      <div>
-        <img src={logo} alt="logo" className="h-24 pr-20 pl-4" /> 
-      </div>
+      
+        <img src={logo} alt="logo" className=" h-24 pr-20 pl-4 w-80" /> 
+      
       {/* buttons */}
       <div className="hidden lg:flex p-2 space-x-16 font-Inter font-semibold text-[#063848]">
         <Link to="/">
@@ -79,11 +79,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className="lg:hidden  min-w-[260px] flex  justify-end items-center md:w-[700px] sm:w-[550px] pr-4  ">
+      <div className="lg:hidden w-[260px] flex  justify-end items-center md:w-[700px] sm:w-[550px] pr-10  ">
         <button onClick={handleMobileMenuToggle} className=" text-4xl right-0 mb-4   ">=</button>
         {isMobileMenuOpen && (
           <div className="absolute right-0 w-fit bg-white shadow-md top-16 rounded-xl">
-            <nav className="flex flex-col p-4 space-y-2 px-20 ">
+            <nav className="flex flex-col p-4 space-y-2 px`-20 ">
               <Link to="/">Home</Link>
               <NavLinkWithDropdown 
   to="/Services"
