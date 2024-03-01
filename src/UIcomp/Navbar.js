@@ -83,7 +83,7 @@ export default function Navbar() {
         <button onClick={handleMobileMenuToggle} className=" text-4xl right-0 mb-4   ">=</button>
         {isMobileMenuOpen && (
           <div className="absolute right-0 w-fit bg-white shadow-md top-16 rounded-xl">
-            <nav className="flex flex-col p-4 space-y-2 pl-20 ">
+            <nav className="flex flex-col p-4 space-y-2 px-20 ">
               <Link to="/">Home</Link>
               <NavLinkWithDropdown 
   to="/Services"
