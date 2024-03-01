@@ -2,16 +2,16 @@ import React from 'react'
 
 function Appdevelopment() {
   return (
-    <section className="bgcolor grid gap-4  py-16 bgcolor place-items-center">
+    <section className="bgcolor grid gap-4  py-16 bgcolor place-items-center overflow-hidden">
     <div className="py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     
-        <div className="grid place-content-end rounded-[20px]  mb-8 lg:mb-16 bg-cover bg-center w-full h-[500px] relative" style={{backgroundImage: "url('images/app2.jpg')"}} >
-             <div className='absolute rounded-b-[20px] bottom-0 px-4 py-3 bg-slate-200/50 w-full'>
-            <h2 className="  text-6xl  p-6 font-extrabold text-gray-900 font-mono" >App Development..!</h2>
-            <p className="text-black pb-6 px-6 text-3xl sm:text-xl font-semibold font-mono"> At Altruisty, we specialize in turning your app ideas into reality. Crafting user-friendly mobile applications tailored to your needs, ensuring seamless functionality and engaging user experiences. </p>
+        <div className="grid  place-content-end rounded-[20px] mb-8 lg:mb-16 bg-cover bg-center w-[350px] md:w-full h-[250px] md:h-[500px] relative" style={{backgroundImage: "url('images/app2.jpg')"}} >
+             <div className='absolute rounded-b-[20px] bottom-0 px-4  bg-slate-200/50 w-full'>
+            <h2 className="  text-4xl text-center px-6 md:p-6 md:text-6xl font-extrabold text-gray-900 font-mono" >App Development..!</h2>
+            <p className="text-black pb-6 hidden md:block px-6 md:text-xl text-sm md:line-clamp-2 hover:line-clamp-4 font-semibold font-mono"> At Altruisty, we specialize in turning your app ideas into reality. Crafting user-friendly mobile applications tailored to your needs, ensuring seamless functionality and engaging user experiences. </p>
             </div>
         </div>
-        <div className="space-y-8 md:grid md:grid-cols-2 w-96 md:w-full mx-auto lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div className="space-y-8 md:grid md:grid-cols-2 w-80 md:w-full mx-auto lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div className=' items-center p-4 transition-all duration-300 transform  shadow-lg place-items-center rounded-xl hover:-translate-y-2 hover:shadow-2xl'>
  
                    <img src='images/app1.jpg' className='rounded-[20px] ' alt=""></img>
