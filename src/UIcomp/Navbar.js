@@ -32,7 +32,7 @@ export default function Navbar() {
         <img src={logo} alt="logo" className=" h-24 pr-20 pl-4 w-80" /> 
       
       {/* buttons */}
-      <div className="hidden lg:flex p-2 space-x-16 font-Inter font-semibold text-[#063848]">
+      <div className="hidden lg:flex p-2 space-x-8 font-Inter font-semibold text-[#063848]">
         <Link to="/">
           <button>Home</button>
         </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
         <button onClick={handleMobileMenuToggle} className=" text-4xl right-0 mb-4   ">=</button>
         {isMobileMenuOpen && (
           <div className="absolute right-0 w-fit bg-white shadow-md top-16 rounded-xl">
-            <nav className="flex flex-col p-4 space-y-2 px`-20 ">
+            <nav className="flex flex-col p-4 space-y-4 px-20">
               <Link to="/">Home</Link>
               <NavLinkWithDropdown 
   to="/Services"
@@ -136,7 +136,7 @@ function NavLinkWithDropdown({ to, label, dropdownItems, isDropdownOpen, setDrop
     >
       <button>{label}</button>
       {isDropdownOpen && (
-        <div className="absolute p-2 text-sm bg-white text-black z-10 rounded-md shadow-md w-max">
+        <div className="absolute p-2 text-sm bg-white text-black z-20 rounded-md shadow-md w-max">
           {dropdownItems.map((item, index) => (
             <p key={index} className="p-2">
               <Link
