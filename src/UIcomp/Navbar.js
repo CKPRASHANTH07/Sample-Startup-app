@@ -79,26 +79,27 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className="lg:hidden  min-w-[220px] max-w-[600px] flex  justify-end items-center md:w-[700px] sm:w-[500px] pr-4 ">
+      <div className="lg:hidden  min-w-[260px] flex  justify-end items-center md:w-[700px] sm:w-[550px] pr-4  ">
         <button onClick={handleMobileMenuToggle} className=" text-4xl right-0 mb-4   ">=</button>
         {isMobileMenuOpen && (
-          <div className="absolute right-0 w-screen bg-white shadow-md top-16">
-            <nav className="flex flex-col p-4 space-y-2">
+          <div className="absolute right-0 w-fit bg-white shadow-md top-16 rounded-xl">
+            <nav className="flex flex-col p-4 space-y-2 pl-20 ">
               <Link to="/">Home</Link>
               <NavLinkWithDropdown 
-                to="/Services"
-                label="Services"
-                dropdownItems={[
-                  { label: "App Development", to: "/appdevelopment" },
-                  { label: "Web Development", to: "/webdevelopment" },
-                  { label: "Graphic Designing", to: "/graphicdesigning" },
-                  { label: "Digital Marketing", to: "/digitalmarketing" },
-                  { label: "Training Program", to: "/training" },
-                  { label: "Internship Program", to: "/internshipprogram" },
-                ]}
-                isDropdownOpen={serviceDropdown}
-                setDropdownOpen={setServiceDropdown}
-              />
+  to="/Services"
+  label="Services"
+  dropdownItems={[
+    { label: "App Development", to: "/appdevelopment" },
+    { label: "Web Development", to: "/webdevelopment" },
+    { label: "Graphic Designing", to: "/graphicdesigning" },
+    { label: "Digital Marketing", to: "/digitalmarketing" },
+    { label: "Training Program", to: "/training" },
+    { label: "Internship Program", to: "/internshipprogram" },
+  ]}
+  isDropdownOpen={serviceDropdown}
+  setDropdownOpen={setServiceDropdown}
+/>
+
               <Link to="/Ipss">Ipss Request</Link>
               <NavLinkWithDropdown
                 to="/Eventsprogram"
@@ -135,7 +136,7 @@ function NavLinkWithDropdown({ to, label, dropdownItems, isDropdownOpen, setDrop
     >
       <button>{label}</button>
       {isDropdownOpen && (
-        <div className="absolute p-2 text-sm bg-white rounded-md shadow-md w-max">
+        <div className="absolute p-2 text-sm bg-white text-black z-10 rounded-md shadow-md w-max">
           {dropdownItems.map((item, index) => (
             <p key={index} className="p-2">
               <Link
