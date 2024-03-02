@@ -46,7 +46,7 @@ export default function Landingpage() {
     <div className="flex items-center pt-32 justify-evenly">
       {/* content */}
       {visibleCards.map((card, index) => (
-        <div className="flex items-center w-fit" key={index}>
+        <div className=" flex flex-col items-center w-fit p-8 text-center sm:flex-row" key={index}>
           <div>
             <h1 className="text-4xl font-bold text-heading font-Poppins">
               {card.title} {/* Changed from cards.title to card.title */}

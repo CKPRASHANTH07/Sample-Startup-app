@@ -3,14 +3,14 @@ import logo from "../pageimg/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950" aria-labelledby="footer-heading">
+    <footer className="bg-slate-700" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="px-6 mx-auto max-w-7xl sm:pt-24 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-5">
-            <img className="h-24" src={logo} alt="Company name" />
+            <img className="h-24 w-fit " src={logo} alt="Company name"/>
             <p className="font-semibold leading-6 text-gray-400 font-Inter">
               Making football look better to the world and a more respecful
               game.
