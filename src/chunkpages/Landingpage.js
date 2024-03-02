@@ -46,12 +46,12 @@ export default function Landingpage() {
     <div className="flex items-center pt-32 justify-evenly">
       {/* content */}
       {visibleCards.map((card, index) => (
-        <div className=" flex flex-col items-center w-fit p-8 text-center sm:flex-row" key={index}>
+        <div className=" flex flex-col items-center w-fit text-center sm:flex-row" key={index}>
           <div>
             <h1 className="text-4xl font-bold text-heading font-Poppins">
               {card.title} {/* Changed from cards.title to card.title */}
             </h1>
-            <h2 className="my-5 font-semibold text-subheading w-96 font-Inter">
+            <h2 className="my-5 p-4 font-semibold text-subheading w-96 font-Inter">
               {card.description} {/* Changed from cards.description to card.description */}
             </h2>
             <button className="h-10 px-5 my-4 text-white w-fit bg-blue-950 rounded-xl font-Poppins">

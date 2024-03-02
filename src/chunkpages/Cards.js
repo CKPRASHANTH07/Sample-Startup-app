@@ -4,7 +4,7 @@ import img from '../pageimg/logo.png'
 
 export default function Cards() {
   return (
-    <div className='flex flex-col justify-between mx-20 my-16'>
+    <div className='flex flex-col justify-between md:mx-20 my-16'>
       <h1 className="hidden pb-10 text-2xl text-center text-gray-800 font-Poppins xl:block">
         Some of our services
       </h1>

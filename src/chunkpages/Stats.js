@@ -3,7 +3,7 @@ import statimg from "../pageimg/image (23).png";
 
 export default function Stats() {
   return (
-    <main className=" overflow-hidden h-fit px-10">
+    <main className=" overflow-hidden h-fit ">
             {/* Title */}
         <h1 className="p-8 text-4xl text-center font-Poppins">What we done ?</h1>
       <div className=" flex flex-col py-4 space-x-12 lg:flex-row lg:px-10">
