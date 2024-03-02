@@ -5,6 +5,8 @@ import Testimonials from "../chunkpages/Testimonials";
 import Endofhome from "../chunkpages/Endofhome";
 import Cards from "../chunkpages/Cards";
 import Footer from "../UIcomp/Footer";
+import Trainingsintens from "../chunkpages/Trainings&intens";
+import Domains from "../chunkpages/Domains";
 
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
     <div>
       <Landingpage/>
       <Stats/>
+      <Trainingsintens />
+      <Domains />
       <Cards/>
       <Testimonials/>
       <Endofhome/>

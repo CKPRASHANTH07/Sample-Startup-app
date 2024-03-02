@@ -60,7 +60,7 @@ export default function Landingpage() {
           </div>
           {/* Hero image */}
           <div className="flex items-center">
-            <img src={card.image} className="w-auto h-auto" alt="img" />
+            <img src={card.image} className="w-auto xl:pl-40 h-auto" alt="img" />
           </div>
         </div>
       ))}
