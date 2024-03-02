@@ -19,7 +19,7 @@ export default function Verttimeline() {
                 className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
                 aria-hidden="true"
               ></span>
-              <div className="z-10 inline-flex items-center justify-center w-20 h-20 transition-all duration-200 border border-gray-300 shrink-0 rounded-xl bg-gray-50 group-hover:border-gray-900 group-hover:bg-gray-900">
+              <div className=" inline-flex items-center justify-center w-20 h-20 transition-all duration-200 border border-gray-300 shrink-0 rounded-xl bg-gray-50 group-hover:border-gray-900 group-hover:bg-gray-900">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -49,7 +49,7 @@ export default function Verttimeline() {
                 className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
                 aria-hidden="true"
               ></span>
-              <div className="z-10 inline-flex items-center justify-center w-20 h-20 transition-all duration-200 border border-gray-300 shrink-0 rounded-xl bg-gray-50 group-hover:border-gray-900 group-hover:bg-gray-900">
+              <div className=" inline-flex items-center justify-center w-20 h-20 transition-all duration-200 border border-gray-300 shrink-0 rounded-xl bg-gray-50 group-hover:border-gray-900 group-hover:bg-gray-900">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
