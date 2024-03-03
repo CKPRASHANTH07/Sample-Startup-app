@@ -4,7 +4,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 export default function Testimonials() {
   return (
-    <div className="h-fit ">
+    <div className="h-fit md:w-full w-96 ">
 
 
         <div>

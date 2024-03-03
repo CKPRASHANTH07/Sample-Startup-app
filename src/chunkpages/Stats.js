@@ -3,10 +3,10 @@ import statimg from "../pageimg/image (23).png";
 
 export default function Stats() {
   return (
-    <main className=" overflow-hidden h-fit pt-32">
+    <main className=" h-fit md:flex-row w-96 md:w-full pt-32">
             {/* Title */}
-        <h1 className="p-8 text-4xl text-center font-Poppins">What we done ?</h1>
-        <h2 className="px-10 lg:px-56 text-center text-blue-950 font-semibold">Introducing "Altruisty" - your compass to meaningful tech solutions! We're a startup dedicated to crafting innovative software solutions that make a difference. With Altruisty, your journey to impactful digital transformation begins. Join us as we navigate the tech landscape together, creating solutions that empower and inspire. Welcome to Altruisty - where purpose meets technology!</h2>
+        <h1 className="pl-4 text-4xl text-center font-Poppins">What we done ?</h1>
+        <h2 className="pl-6 pt-4 lg:px-56 text-center text-blue-950 font-semibold">Introducing "Altruisty" - your compass to meaningful tech solutions! We're a startup dedicated to crafting innovative software solutions that make a difference. With Altruisty, your journey to impactful digital transformation begins. Join us as we navigate the tech landscape together, creating solutions that empower and inspire. Welcome to Altruisty - where purpose meets technology!</h2>
       <div className=" flex flex-col py-32 space-x-12 lg:flex-row lg:px-10">
         {/* Hero image */}
         <div className="flex items-start px-10 ">

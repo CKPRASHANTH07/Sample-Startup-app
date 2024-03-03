@@ -43,7 +43,7 @@ export default function Landingpage() {
   const visibleCards = getVisibleCards();
   return (
   <div>
-    <div className="flex items-center pt-32 justify-evenly">
+    <div className="md:flex md:items-center pt-32 justify-evenly">
       {/* content */}
       {visibleCards.map((card, index) => (
         <div className=" flex flex-col items-center w-fit text-center sm:flex-row" key={index}>

@@ -11,7 +11,7 @@ import Domains from "../chunkpages/Domains";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pl-8">
       <Landingpage/>
       <Stats/>
       <Trainingsintens />

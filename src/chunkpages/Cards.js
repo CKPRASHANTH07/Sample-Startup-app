@@ -4,7 +4,7 @@ import img from '../pageimg/logo.png'
 
 export default function Cards() {
   return (
-    <div className='flex flex-col justify-between md:mx-20 my-16'>
+    <div className='flex flex-col justify-between md:w-full w-96 md:pr-20 md:mx-20 my-16'>
       <h1 className="hidden pb-10 text-2xl text-center text-gray-800 font-Poppins xl:block">
         Some of our services
       </h1>
@@ -18,7 +18,7 @@ export default function Cards() {
           src={img}
           alt=""
         />
-        <div className="flex flex-col justify-between p-4 leading-normal">
+        <div className="flex flex-col justify-between p-4 leading-normal pr-10">
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">
             Noteworthy technology acquisitions 2021
           </h5>

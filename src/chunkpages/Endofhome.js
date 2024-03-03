@@ -41,7 +41,7 @@ export default function Endofhome() {
   const visibleCards = getVisibleCards();
 
   return (
-    <div className="my-24 h-fit">
+    <div className="my-24 h-fit md:w-full w-96">
       <h1 className="text-2xl text-center font-Poppins">
         Companies that trust us !
       </h1>

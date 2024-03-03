@@ -3,9 +3,9 @@ import image from '../pageimg/image.png'
 
 const Trainingsintens = () => {
   return (
-    <div className='h-screen w-screen '>
-        <h1 className='text-4xl pl-10 font-bold'>Training&Internships</h1>
-<div className=" items-start w-full p-10  flex flex-rows lg:flex-col overflow-x-auto py-20">
+    <div className='w-96 md:w-full space-y-16 '>
+        <h1 className='text-4xl pl-4 font-bold'>Training&Internships</h1>
+<div className=" items-start pl-10  flex flex-rows lg:flex-col overflow-x-auto py-20 md:py-0">
         <div className="flex ">
       <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
         <h1 className="text-3xl pb-4 font-bold">Internships</h1>
