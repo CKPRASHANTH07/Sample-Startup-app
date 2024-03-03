@@ -9,9 +9,10 @@ import Trainingsintens from "../chunkpages/Trainings&intens";
 import Domains from "../chunkpages/Domains";
 
 
+
 export default function Home() {
   return (
-    <div className="pl-8">
+    <div className="pl-8 ">
       <Landingpage/>
       <Stats/>
       <Trainingsintens />

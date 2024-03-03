@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import img1 from "../pageimg/mm.png";
 import img2 from "../pageimg/idea.png"
 import img3 from "../pageimg/fund.png"
+import bggif from '../pageimg/BGgif.gif'
 
 export default function Landingpage() {
 
@@ -43,7 +44,8 @@ export default function Landingpage() {
   const visibleCards = getVisibleCards();
   return (
   <div>
-    <div className="md:flex md:items-center pt-32 justify-evenly">
+    <img src={bggif} alt="gif" />
+    <div className="md:flex md:items-center pt-32 justify-evenly ">
       {/* content */}
       {visibleCards.map((card, index) => (
         <div className=" flex flex-col items-center w-fit text-center sm:flex-row" key={index}>
