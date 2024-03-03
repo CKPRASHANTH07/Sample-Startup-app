@@ -3,7 +3,7 @@ import logo from "../pageimg/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-700 md:w-full w-[500px]" aria-labelledby="footer-heading">
+    <footer className="bg-slate-700 md:w-full w-[500px] ml-[-40px]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

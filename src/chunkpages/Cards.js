@@ -1,5 +1,8 @@
 import React from 'react';
-import img from '../pageimg/logo.png'
+
+import Network from '../pageimg/Network.svg'
+import Coder from '../pageimg/Coder.svg'
+import Grow from '../pageimg/grow.png'
 
 
 export default function Cards() {
@@ -15,7 +18,7 @@ export default function Cards() {
       >
         <img
           className="object-fit w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          src={img}
+          src={Network}
           alt=""
         />
         <div className="flex flex-col justify-between p-4 leading-normal pr-10">
@@ -36,7 +39,7 @@ export default function Cards() {
         >
           <img
             className="object-fit w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-            src={img}
+            src={Coder}
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
@@ -57,7 +60,7 @@ export default function Cards() {
       >
         <img
           className="object-fit w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          src={img}
+          src={Grow}
           alt=""
         />
         <div className="flex flex-col justify-between p-4 leading-normal ">
