@@ -54,11 +54,12 @@ export default function Endofhome() {
             return (
               <div
                 key={index}
-                className="flex flex-col  px-8 py-8  lg:w-[35%] xl:w-[30%] rounded-lg transform scale-[0.7] translate-y-3"
+                className="flex flex-col  px-8 py-8  rounded-lg transform scale-[0.7] translate-y-3"
               >
                 {/* Images logo */}
                 <div className="flex items-center justify-center px-5 py-5 ">
-                  <img src={card.image} alt="" />
+                  
+                  <img src={card.image} alt="" className="" />
                 </div>
               </div>
             );
