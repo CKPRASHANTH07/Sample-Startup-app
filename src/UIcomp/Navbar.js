@@ -26,13 +26,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`fixed z-10 flex items-center justify-around  ${isScrolled ? "backdrop-blur-md bg-white/30" : ""}`}>
+    <div className={`fixed z-10 flex items-center justify-around  ${isScrolled ? "backdrop-blur-md rounded-2xl bg-white/30" : ""}`}>
       {/* logo */}
       
         <img src={logo} alt="logo" className=" h-24 pr-20 pl-4 w-80" /> 
       
       {/* buttons */}
-      <div className="hidden lg:flex p-2 space-x-8 font-Inter font-semibold text-[#063848]">
+      <div className="hidden lg:flex p-2 space-x-8 font-Inter font-semibold text-[#063848] ">
         <Link to="/">
           <button>Home</button>
         </Link>
@@ -50,8 +50,8 @@ export default function Navbar() {
           isDropdownOpen={serviceDropdown}
           setDropdownOpen={setServiceDropdown}
         />
-        <Link to="/Ipss">
-          <button>Ipss Request</button>
+        <Link to="/hosteventprogram">
+          <button>Host Events</button>
         </Link>
         <NavLinkWithDropdown
           to="/Eventsprogram"
@@ -59,7 +59,6 @@ export default function Navbar() {
           dropdownItems={[
             { label: "Events & competition", to: "/eventsandcompetition" },
             { label: "Past program log", to: "/pastprogramlog" },
-            { label: "Host Event Program", to: "/hosteventprogram" },
           ]}
           isDropdownOpen={eventDropdown}
           setDropdownOpen={setEventDropdown}
@@ -68,7 +67,7 @@ export default function Navbar() {
           <button>Musical hub</button>
         </Link>
         <Link to="/">
-          <button>Altruisty launchpad</button>
+          <button> Startup Services</button>  
         </Link>
         <Link to="/Aboutus">
           <button>Aboutus</button>
@@ -80,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className="lg:hidden w-[260px] flex  justify-end items-center md:w-[700px] sm:w-[550px] pr-10  ">
-        <button onClick={handleMobileMenuToggle} className=" text-4xl right-0 mb-4   ">=</button>
+        <button onClick={handleMobileMenuToggle} className=" text-xl right-0 mb-4 text-orange-600 hover:bg-red-600 hover:text-white font-bold border-4 border-blue-950 rounded-md ">MENU</button>
         {isMobileMenuOpen && (
           <div className="absolute right-0 w-fit bg-white shadow-md top-16 rounded-xl">
             <nav className="flex flex-col p-4 space-y-4 px-20">
@@ -100,20 +99,19 @@ export default function Navbar() {
   setDropdownOpen={setServiceDropdown}
 />
 
-              <Link to="/Ipss">Ipss Request</Link>
+              <Link to="/hosteventprogram">Host Events</Link>
               <NavLinkWithDropdown
                 to="/Eventsprogram"
                 label="Events program"
                 dropdownItems={[
                   { label: "Events & competition", to: "/eventsandcompetition" },
                   { label: "Past program log", to: "/pastprogramlog" },
-                  { label: "Host Event Program", to: "/hosteventprogram" },
                 ]}
                 isDropdownOpen={eventDropdown}
                 setDropdownOpen={setEventDropdown}
               />
               <Link to="/">Musical hub</Link>
-              <Link to="/">Altruisty launchpad</Link>
+              <Link to="/"> Startup Services</Link>
               <Link to="/Aboutus">Aboutus</Link>
               <Link to="/Contactus">Contact us</Link>
             </nav>

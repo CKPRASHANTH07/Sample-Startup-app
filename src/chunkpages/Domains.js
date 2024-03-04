@@ -4,7 +4,7 @@ const Domains = () => {
   return (
     <main className=" h-fit md:flex-row w-96 md:w-full pt-32">
     {/* Title */}
-<h1 className="pl-4 text-4xl text-center font-Poppins">Domains</h1>
+<h1 className="pl-4 text-4xl text-center font-Poppins">Services</h1>
 <div className=" flex flex-col py-32 space-x-12 lg:flex-row lg:px-10">
 {/* Hero image */}
 
