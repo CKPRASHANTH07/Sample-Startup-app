@@ -69,7 +69,7 @@ const Trainingintern = () => {
 
   return (
     <section className="grid gap-4 w-full py-32 bgcolor">
-      <h1 className="grid my-4 text-4xl pl-10 font-bold pb-20 ">Our Training Programs</h1>
+      <h1 className="grid my-4 text-4xl  font-bold pb-20 place-items-center">Our Training Programs</h1>
       <div className="h-96 sm:w-[600px] md:w-[800px] lg:w-[1000px] w-96  gap-20 mx-auto">
         <Slider {...settings}>
           {data.map((item, index) => (

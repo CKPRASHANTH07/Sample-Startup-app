@@ -8,7 +8,7 @@ import Grow from '../pageimg/grow.png'
 export default function Cards() {
   return (
     <div className='flex flex-col space-y-8 justify-between md:w-full w-96 max-w-[1200px] md:pr-20 md:mx-20 my-16'>
-      <h1 className=" py-10 text-2xl text-center text-gray-800 font-Poppins xl:block">
+      <h1 className=" py-10 text-3xl text-gray-800 font-Poppins xl:block pl-20 text-center">
         Some of our services
       </h1>
 
