@@ -51,11 +51,11 @@ export default function Navbar() {
           setDropdownOpen={setServiceDropdown}
         />
         <Link to="/hosteventprogram">
-          <button>Host Events</button>
+          <button>Event Management</button>
         </Link>
         <NavLinkWithDropdown
           to="/Eventsprogram"
-          label="Events program"
+          label="Events & competition"
           dropdownItems={[
             { label: "Events & competition", to: "/eventsandcompetition" },
             { label: "Past program log", to: "/pastprogramlog" },
@@ -99,12 +99,12 @@ export default function Navbar() {
   setDropdownOpen={setServiceDropdown}
 />
 
-              <Link to="/hosteventprogram">Host Events</Link>
+              <Link to="/hosteventprogram">Events Management</Link>
               <NavLinkWithDropdown
                 to="/Eventsprogram"
-                label="Events program"
+                label="Events & Competition"
                 dropdownItems={[
-                  { label: "Events & competition", to: "/eventsandcompetition" },
+                  
                   { label: "Past program log", to: "/pastprogramlog" },
                 ]}
                 isDropdownOpen={eventDropdown}

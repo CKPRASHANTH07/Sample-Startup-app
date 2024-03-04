@@ -1,40 +1,91 @@
-import React from "react";
 
-export default function Stats() {
-  return (
-    <main className=" h-fit md:flex-row w-96 md:w-full pt-32">
-            {/* Title */}
-        <h1 className="pl-4 text-4xl text-center font-Poppins">What we done ?</h1>
-        <h2 className="pl-6 pt-4 lg:px-56 text-center text-blue-950 font-semibold">Introducing "Altruisty" - your compass to meaningful tech solutions! We're a startup dedicated to crafting innovative software solutions that make a difference. With Altruisty, your journey to impactful digital transformation begins. Join us as we navigate the tech landscape together, creating solutions that empower and inspire. Welcome to Altruisty - where purpose meets technology!</h2>
-      <div className=" flex flex-col py-32 space-x-12 lg:flex-row lg:px-10">
-      
-        {/*  content */}
-        <div className=" items-start w-full  flex flex-rows lg:flex-col overflow-hidden overflow-x-auto pt-10">
-        <div className="flex gap-x-10">
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Training</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Internships</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Teaching</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Help startups</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Best training</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      
-    </div>
-          </div>
-      </div>
-    </main>
-  );
-}
+           import React from 'react';
+        import Slider from 'react-slick';
+        import 'slick-carousel/slick/slick.css';
+        import 'slick-carousel/slick/slick-theme.css';
+        
+        const Stats = () => {
+          const data = [
+            {
+              title: 'Slide 1',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 2',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 3',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 4',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 5',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 6',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+            {
+              title: 'Slide 7',
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+            },
+          ];
+        
+          const settings = {
+            className: 'center',
+            centerMode: true,
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            centerPadding: '60px',
+            cssEase: 'linear',
+            autoplaySpeed: 2500,
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  centerMode: false,
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  centerMode: false,
+                }
+              },
+            ],
+          };
+        
+          return (
+            <section className="grid gap-4 w-full py-32 bgcolor">
+               <h1 className="pl-4 text-4xl text-center font-Poppins">What we done ?</h1>
+        <h2 className="pl-6 pt-4 lg:px-56 text-center text-blue-950 pb-20 font-semibold">Introducing "Altruisty" - your compass to meaningful tech solutions! We're a startup dedicated to crafting innovative software solutions that make a difference. With Altruisty, your journey to impactful digital transformation begins. Join us as we navigate the tech landscape together, creating solutions that empower and inspire. Welcome to Altruisty - where purpose meets technology!</h2>
+    
+              <div className="h-96 sm:w-[600px] md:w-[800px] lg:w-[1000px] w-96  gap-20 mx-auto">
+                <Slider {...settings}>
+                  {data.map((item, index) => (
+                    <div key={index} className="text-gray-500 sm:text-lg :text-gray-400">
+                      <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-blue-900 :text-white">{item.title}</h2>
+                      <p className="mb-8 font-semibold p-20 lg:text-xl">{item.desc}</p>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </section>
+          );
+        };
+        
+        export default Stats;
+        

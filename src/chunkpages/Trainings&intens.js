@@ -1,47 +1,87 @@
-import React from 'react'
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Trainingsintens = () => {
+const Trainingintern = () => {
+  const data = [
+    {
+      title: 'Slide 1',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 2',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 3',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 4',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 5',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 6',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+    {
+      title: 'Slide 7',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi.',
+    },
+  ];
+
+  const settings = {
+    className: 'center',
+    centerMode: true,
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    centerPadding: '60px',
+    cssEase: 'linear',
+    autoplaySpeed: 2500,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          centerMode: false,
+        }
+      },
+    ],
+  };
+
   return (
-    <div className='w-96 md:w-full space-y-16 '>
-        <h1 className='text-4xl pl-4 font-bold'>Training&Internships</h1>
-<div className=" items-start md:w-[670px] sm:[470px] lg:w-[1000px] xl:w-full pl-10 flex flex-rows lg:flex-col overflow-x-auto md:py-0">
-        <div className="flex space-x-10 ">
-      <div className="border-2 mr-4 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Internships</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
+    <section className="grid gap-4 w-full py-32 bgcolor">
+      <h1 className="grid my-4 text-4xl pl-10 font-bold pb-20 ">Our Training Programs</h1>
+      <div className="h-96 sm:w-[600px] md:w-[800px] lg:w-[1000px] w-96  gap-20 mx-auto">
+        <Slider {...settings}>
+          {data.map((item, index) => (
+            <div key={index} className="text-gray-500 sm:text-lg :text-gray-400">
+              <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-blue-900 :text-white">{item.title}</h2>
+              <p className="mb-8 font-semibold p-20 lg:text-xl">{item.desc}</p>
+            </div>
+          ))}
+        </Slider>
       </div>
-      
-      <div className="border-2 mr-4 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Training</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      
-      <div className="border-2 mr-4 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Industry Experience</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      
-      <div className="border-2 mr-4 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Industry Level Projects</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      
-      <div className="border-2 mr-4 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Life time Support</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-      
-      <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
-        <h1 className="text-3xl pb-4 font-bold">Hands On Projects</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat, quam vitae pretium varius, velit ipsum gravida nisi, et dictum dui risus nec purus. Integer quis ultricies mi. Vivamus quis arcu id orci euismod lacinia. Sed scelerisque, felis in sodales molestie, enim elit condimentum nulla, nec faucibus ipsum ligula sit amet justo.</p>
-      </div>
-     
-      
-    </div>
-    </div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Trainingsintens
+export default Trainingintern;
