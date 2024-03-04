@@ -9,7 +9,7 @@ export default function Stats() {
       <div className=" flex flex-col py-32 space-x-12 lg:flex-row lg:px-10">
       
         {/*  content */}
-        <div className=" items-start w-full p-10  flex flex-rows lg:flex-col overflow-hidden overflow-x-auto pt-10">
+        <div className=" items-start w-full  flex flex-rows lg:flex-col overflow-hidden overflow-x-auto pt-10">
         <div className="flex gap-x-10">
       <div className="border-2 p-8 border-gray-300 rounded-2xl h-96 w-96">
         <h1 className="text-3xl pb-4 font-bold">Training</h1>
